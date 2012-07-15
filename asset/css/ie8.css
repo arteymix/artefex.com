@@ -1,0 +1,59 @@
+/* CSS propre ˆ IE8 */
+
+body {	
+	background-position: bottom;        
+	background-image: url('../image/fond_ecran/nuage.jpg');
+		background-attachment: fixed;
+		background-size: 100% 100%;
+
+}
+
+
+
+#content-container {
+	background-image: url('../image/fond_ecran/base-verte2.png');
+	background-repeat: repeat-x;
+	
+}
+
+
+
+#right-building {
+	background: url('../image/fond_ecran/batisses-droite.png') no-repeat;
+	position:fixed;
+	height: 300px;
+	width: 230px;
+	right: 0;
+	bottom: 200px;
+	z-index: -100;
+}
+
+#left-building {
+	background: url('../image/fond_ecran/batisses-gauche.png') no-repeat;
+	position:fixed;
+	height: 300px;
+	width: 230px;
+	left: 0;
+	bottom: 200px;
+	z-index: -100;
+}
+
+#devenir-membre-texte {
+	top: 15px;
+	position: absolute;
+	left: 0px;
+}
+
+#envoyer-texte {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	
+}
+
+article.item {
+ 	background: white;
+	border: solid 2px #DDD;
+	
+}
+	

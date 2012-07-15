@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Artéfex, programmation et gestion de projets</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/monsite.com/asset/css/960.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/monsite.com/asset/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/monsite.com/asset/css/style.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    </head>
+    <body>
+
+
+        <div id="content-container">
+
+            <a href="https://github.com/arteymix"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+
+            <header>
+                <div class="content">
+
+                    <nav id="menu"> 
+                        <ul>
+                            <li><a href="/monsite.com" >Accueil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="contact.html" style="text-shadow: 0px 0px 4px white;">Contact</a></li>
+                            <li><a href="about.html">À propos</a></li>
+
+                        </ul>
+
+                    </nav>
+                    <br class="clear" />
+
+                </div>
+
+
+
+            </header>
+
+
+            <section></section>
+
+            <div class="content">
+
+
+
+                <br class="clear" />
+
+                <aside id="logo">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</aside>
+
+                <section id="description">
+                    <hgroup id="title">
+                        <h1>Artéfex</h1>
+                        <h2 >Projet libre et coopératifs pour entreprises</h2>
+                    </hgroup>
+
+                    <br class="clear" /> 
+
+                    <p>Notre travail chez Artéfex, c'est pas juste un look, c'est avant tout une solide structure logiciel basée sur les dernières innovations dans le monde de l'informatique.</p>
+
+                    <p>Tout est construit sur du logiciel libre. Pas de licences coûteuses, de contrats lourds, d'obligations de toute sorte. Le développement est ouvert et vous fournira des améliorations et de nouvelles fonctionalités même après l'échéance du contrat.</p>
+
+                </section>
+
+
+
+
+                <br class="clear" />
+
+                <section id="projets">
+                    <div id="projets-container">
+                        <div class="projet">
+                            <h3>SaveInTeam</h3>
+                            <p>Site d'enchère en ligne inversé. Beaucoup de gestion de base de données et d'interactions avec les utilisateurs.</p>
+                        </div>
+
+                        <div class="projet">
+                            <h3>Projet 1</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="projet"> 
+                            <h3>Projet 1</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="projet"> 
+                            <h3>Projet 1</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="projet"> 
+                            <h3>Projet 1</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="projet"> <h3>Projet 1</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <nav id="projets-navigator">
+
+                        <ul>
+
+                            <li style="text-shadow: 0px 0px 4px white">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            
+                            <li id="projets-navigator-play">Stopper</li>
+
+                        </ul>
+
+
+                    </nav>
+
+                    <script type="text/javascript">
+                           
+                        var delay = 5000;
+                        var transition = 1000;
+                        var slideshow = true;
+                        var projetCount = $(".projet").size();
+                        
+                        /*for(i = projetCount; i >= 1; i--) {
+                            
+                            $("#projets-navigator ul").prepend("<li>"+i+"</li>");
+                        }*/
+                        
+                        function is_int(input){
+                            return typeof(input)=='number'&&parseInt(input)==input;
+                        }
+                        
+                        function refreshIndexHover(index) {
+                            $("#projets-navigator li").css("text-shadow", "");
+                            $("#projets-navigator li:contains("+(index + 1)+")").css("text-shadow", "0px 0px 4px white");
+                            
+                        }
+
+                
+                        function showProjet(index) {
+                            
+                            $("#projets-container").animate({top: -index * 400}, transition );
+                            refreshIndexHover(index);
+                        }
+                           
+                        function showNextProjet() {
+                            
+                            if(!slideshow) {
+                                
+                                return;
+                            }
+                            var currentTop = parseInt($("#projets-container").css("top"));
+                            var mIndex;
+                            var currentHeight = - (projetCount - 2) * 400;
+                               
+                               
+                            if(currentTop < currentHeight) {
+                                $("#projets-container:not(:animated)").animate({top: 0}, transition );
+                                  mIndex = 0; 
+                            } else {
+                                $("#projets-container:not(:animated)").animate({top: currentTop - 400}, transition);
+                                mIndex = (currentTop / -400) + 1;
+                            }  
+                            refreshIndexHover(mIndex);
+                        }
+                        $("#projets-navigator li").click(
+                        function() {
+                                
+                            if(! is_int(parseInt(this.innerHTML))) {
+                                // C'est un bouton d'action.
+                                return;   
+                            }
+                            var mIndex = parseInt(this.innerHTML) - 1;
+                            showProjet(mIndex);
+                                
+                        }
+                            
+                    );  
+                            
+                        $("#projets-navigator-play").click(
+                        function() {
+                            slideshow = !slideshow;
+                            if(slideshow) {
+                                $("#projets-navigator-play").text("Stopper");
+                                    
+                            } else {
+                                $("#projets-navigator-play").text("Jouer");
+                                    
+                            }
+                                
+                                
+                        }
+                            
+                    ); 
+                            
+                            
+                           
+                           
+                        setInterval(showNextProjet, delay);
+                           
+                           
+                    </script>
+                </section>
+
+
+
+            </div>
+            <footer>
+
+                <div class="content container_16">
+                    <div class="grid_4">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li>Accueil</li>
+                            <li>Projets</li>
+                            <li>Contact</li>
+                            <li>À propos</li>
+
+                        </ul>
+
+
+                    </div>
+                    <div class="grid_4">
+                        <h4>Programmation</h4>
+                        <ul>
+                            <li>Libre et open-source</li>
+                            <li>Frameworks</li>
+                            <li>Gestion de version</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="grid_4">
+                        <h4>Gestion de projets</h4>
+                        <ul>
+                            <li>Projets web</li>
+                            <li>Logiciels</li>
+                            <li>Configuration de serveurs</li>
+
+                        </ul>
+
+
+                    </div>
+ <div class="grid_4">
+                        <h4>Gestion de projets</h4>
+                        <ul>
+                            <li>Projets web</li>
+                            <li>Logiciels</li>
+                            <li>Configuration de serveurs</li>
+
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+
+            </footer>
+            <div id="copyright">
+                Construit en HTML5 et CSS3 avec Kohana.<br />
+                Tout droits réservés &copy; Artéfex
+            </div>
+        </div>
+
+
+    </body>
+
+
+</html>
