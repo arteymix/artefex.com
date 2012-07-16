@@ -1,8 +1,8 @@
 a {
     text-decoration: none;
     color: white;
-outline: none;  
-overflow: hidden;
+    outline: none;  
+    overflow: hidden;
 }
 
 p {margin: 15px;}
@@ -31,21 +31,21 @@ section {
 #content-container {
     font-family: 'Simonetta', cursive;
     font-size: 17px;
-
+text-shadow: 0px 0px 10px black;
 
     color: white;
     background-image: 
         -moz-radial-gradient( center center, circle, rgba(5,5,5,0) 0px, rgba(5,5,5,0.9) 900px ),
         url(../img/background.png);
-    
+
     background-image: 
         -webkit-gradient(radial, center center, 0, center center, 900 , from(rgba(5,5,5,0)), to(rgba(5,5,5,0.9))),
         url(../img/background.png);
     background-image: 
         -o-radial-gradient(50% 50%, 900px 90%, rgba(5,5,5,0), rgba(5,5,5,0.9)),
         url(../img/background.png);
-    
-    background-position: center, center;
+
+    background-position: center, left top;
     background-repeat: repeat, repeat;
 
 }
@@ -101,6 +101,7 @@ a:hover {
 #description {
     float: right;
     width: 600px;
+    text-align: right;
 }
 
 
@@ -138,6 +139,7 @@ footer ul {
 }
 
 #projets {
+    
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -147,10 +149,11 @@ footer ul {
     box-shadow:         0px 0px 6px #ccc;
     -webkit-border-radius: 30px;
     border-radius: 30px;
- 
+
 
 }
 #projets-container {
+     
     -webkit-border-radius: 30px;
     border-radius: 30px;
     position: absolute; 
@@ -181,18 +184,138 @@ footer ul {
 
 }
 .projet {
-    
+   
     height: 360px; 
     padding: 20px;
     position: relative;
     -webkit-border-radius: 30px;
-    
+
 }
 
 .projet h1 {
     position: absolute;
     bottom: 15px; left: 30px;
-    
+
 }
 
+
+
+/* Page des projets */
+
+
+.projet-container {
+    height: 220px; 
+    margin-bottom: 20px;
+    -o-box-shadow:    0px 0px 6px #ccc;
+    -moz-box-shadow:    0px 0px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 6px #ccc;
+    box-shadow:         0px 0px 6px #ccc;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+.projet-text {
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.7);
+    height: 180px;
+    opacity: 0;
+    padding: 20px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.equipe-element-container {
+
+    -o-box-shadow:    0px 0px 6px #ccc;
+    -moz-box-shadow:    0px 0px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 6px #ccc;
+    box-shadow:         0px 0px 6px #ccc;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+
+
+}
+
+.equipe-element {margin: 20px}
+
+
+
+
+
+
+
+
+
+
+/* forms */
+input, textarea, select {
+    
+    font-size: 100%;    
+    background: #f9f9f9;
+    font-family: 'Metamorphous', cursive;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+     -o-box-shadow:    0px 0px 6px #ccc;
+    -moz-box-shadow:    0px 0px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 6px #ccc;
+    box-shadow:         0px 0px 6px #ccc;
+    margin:0 0 5px;
+}
+textarea {
+    line-height: 150%;
+}
+
+select {}
+
+input[type=text], input[type=password], input[type=email], textarea, button {
+    font-family: 'Metamorphous', cursive;
+    border: solid 1px #d3d3d3;
+    border-top-color: #bbb;
+    border-bottom-color: #eee;
+    padding: 7px;
+    background: #f9f9f9;
+}
+input[type=file] {
+    
+   font-family: 'Metamorphous', cursive;
+    border: solid 1px #d3d3d3;
+    border-top-color: #bbb;
+    border-bottom-color: #eee;
+    padding: 5px;
+    background: #f9f9f9; 
+}
+button {
+
+    margin-left: 0; 
+     -o-box-shadow:    0px 0px 6px #ccc;
+    -moz-box-shadow:    0px 0px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 6px #ccc;
+    box-shadow:         0px 0px 6px #ccc;
+
+}
+
+button:active {
+    background: lightgrey;
+}
+
+
+
+/* Internet explorer */
+
+
+select {
+    position:relative;
+    width:322px;
+    *width:464px;
+    height:34px;
+    cursor:pointer;
+    padding:0 10px;
+    /*background:url(../image/select.gif) no-repeat top left !important;*/
+    font-size:12px;
+    border:none;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    -khtml-appearance:none;
+}
 

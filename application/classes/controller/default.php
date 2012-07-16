@@ -30,6 +30,7 @@ abstract class Controller_Default extends Controller_Template {
         
 		$this->template->header = $this->header;
 		$this->template->content = $this->content;
+        $this->footer->name = $this->request->controller();
 		$this->template->footer = $this->footer;
 		parent::after();
 	}

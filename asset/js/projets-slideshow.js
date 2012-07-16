@@ -9,7 +9,7 @@ function is_int(input){
 }
                         
 function refreshIndexHover() {
-    $("#projets-navigator li").css("text-shadow", "");
+    
     $("#projets-navigator li:contains("+(mIndex + 1)+")").css("text-shadow", "0px 0px 4px white");
                             
 }
@@ -18,7 +18,7 @@ function refreshIndexHover() {
 function show(index) {
     slideshow = false;
     mIndex = index; 
-    
+    $("#projets-navigator li").css("text-shadow", "");
     $("#projets-container").animate({
         top: (index * - 400) - (index == 0 ? -10:10)
     }, transition, refreshIndexHover
@@ -30,7 +30,7 @@ function show(index) {
        
         slideshow = true;
     }
-    )
+    );
     
     
 }
@@ -40,18 +40,15 @@ function showNext() {
     if(!slideshow) {
                                 
         return;
-    } 
+    }   
     
-    
+    var index = 0;                    
                                
-                               
-    if(mIndex >= projetCount - 1) {
-        mIndex = 0;
-    } else {
-        mIndex++;        
+    if(mIndex < projetCount - 1) {
+        index = mIndex + 1; 
     }  
     
-    show(mIndex);
+    show(index);
     
    
     
@@ -60,11 +57,11 @@ function showNext() {
 $("#projets-navigator li").click(
     function() {
                                 
-        if(! is_int(parseInt(this.innerHTML))) {
+        if(! is_int(parseInt($(this).text()))) {
             // C'est un bouton d'action.
             return;   
         }
-        var mIndex = parseInt(this.innerHTML) - 1;
+        var mIndex = parseInt($(this).text()) - 1;
         show(mIndex);
                                 
     }

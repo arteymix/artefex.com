@@ -1,8 +1,7 @@
 <?php
 
 
-
-echo file_get_contents("http://localhost/artefex.com/wordpress/index.php");
+echo $wordpress;
 
 
 

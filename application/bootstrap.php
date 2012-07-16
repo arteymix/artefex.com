@@ -158,6 +158,11 @@ Route::set('partenaires', '(<controller>(/<action>(/<id>)))', array(
     'action' => 'index',
 ));
 
+Route::set('programmation', '(<controller>(/<action>(/<id>)))', array(
+    'controller' => 'programmation',
+    'action' => 'index',
+));
+
 Route::set('blog', '(<controller>(/<action>(/<id>)))', array(
     'controller' => 'blog',
     'action' => 'index',
