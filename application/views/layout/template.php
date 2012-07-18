@@ -19,6 +19,11 @@
 
 			<footer><?php echo $footer; ?></footer>
 
+            <!-- Place this code where you want the badge to render. -->
+<center style="margin-bottom: 20px;">
+<div id="google-plus" style="height:32px ;width:32px ; background: url(//ssl.gstatic.com/images/icons/gplus-32.png)"></div>
+</center>
+            
 			<div id="copyright">
 				Construit en HTML5 et CSS3 avec Kohana.<br />
 				Tout droits réservés &copy; Artéfex

@@ -18,13 +18,32 @@
 <section id="projet" class="container_16" style="margin-bottom: 0;">
     <h2 style="margin-bottom: 20px">Réalisation d'un projet</h2>
     
-    <p>Blabla</p>
+    <div class="container_16">
+        
+    <div class="grid_8">    
+    <h3>Identification du besoin</h3>
+    <p style="text-align: justify">La première étape est l'indentification du besoin réel du client. Un rencontre nous permet de déterminer avec une bonne précision les éléments qui seront présentés dans la conception générale.</p>
+    
+    <h3>Conception générale</h3>
+    <p style="text-align: justify">Sur la base des besoins et d'une rencontre pour éclairer l'ampleur du travail sera présenté un plan général et conceptuel du projet. Ce plan sera une base et un guide précieux pour l'étape de production.</p>
+    </div>
+     <div class="grid_8">   
+    <h3>Production</h3>
+    <p style="text-align: justify">L'étape de production est l'étape la plus cruciale. Toutes décisions doivent être finales. Nos ingénieurs et programmeurs entâmerons l'ardue tâche de création.</p>
+    
+    <h3>Distribution</h3>
+    <p style="text-align: justify">Quand le produit fini est prêt, il sera distribué dans les différents réseaux de distribution du monde du logiciel libre. Les autres équipes de développeurs à travers le monde pourront alors constater le travail effectué et y apporter leurs contributions.</p>
+    </div>
+    </div>
+    
     
     
 </section>
 
 <section id="web">
     <h2 style="margin-bottom: 20px">Sur le web</h2>
+    
+    <p>Le web est un endroit merveilleux pour réaliser un projet d'envergure. Il est parfaitement adapté pour développer rapidement et efficacement et fournissant le moins d'efforts possible.</p>
     
     <div class="projet-container grid_4" style="background: url(asset/img/saveinteam.png)">
         
@@ -64,6 +83,8 @@
 </section>
 <section id="logiciel">
     <h2 style="margin-bottom: 20px">Sous forme de logiciel</h2>
+    
+    <p>Le logiciel est une façon pratique et puissante de mettre en oeuvre un projet.</p>
      <div class="projet-container grid_4" >
         <div class="projet-text">
             <h2>Budj'hète</h2>
@@ -101,6 +122,8 @@
 </section>
 <section id="serveur">
     <h2 style="margin-bottom: 20px">Configuration de serveur</h2>
+    <p>Configurer un serveur informatique qui répond à des besoins spécifiques est une tâche très complexe. Laissez-nous le faire pour vous.</p>
+    
      <div class="projet-container grid_4" >
         <div class="projet-text">
             <h2>Budj'hète</h2>

@@ -25,11 +25,11 @@
 
 <section id="email">
     <h2 style="float: right; margin-bottom: 20px">Par courriel</h2><br class="clear"/>
-        <form>
-        <textarea placeholder="Message" style="margin-left: 20px; float: right;display: inline; width: 400px; height: 300px"></textarea>
+        <form action="<?php echo URL::base() ?>contact" method="post">
+        <textarea name="message" placeholder="Message" style="margin-left: 20px; float: right;display: inline; width: 400px; height: 300px"></textarea>
         <div style="float: right; display: inline">
-        <span style="margin-bottom: 20px;float: right;">Nom : <input type="text" placeholder="Nom" /></span><br />
-         <span style="margin-bottom: 20px;float: right;">Courriel : <input type="text" placeholder="Courriel" /></span><br />
+        <span style="margin-bottom: 20px;float: right;"><input name="nom" type="text" placeholder="Nom" /></span><br />
+         <span style="margin-bottom: 20px;float: right;"><input name="courriel" type="email" placeholder="Courriel" /></span><br />
          <button style="float: right; display: inline" type="submit">Envoyer</button>
         </div>
         
@@ -37,10 +37,4 @@
     <br class="clear"/>
     </section>
 
-<section id="social">
-    <h2>Sur les résaux sociaux</h2>
-    
-    <p>Blabla</p>
-    
-</section>
 
