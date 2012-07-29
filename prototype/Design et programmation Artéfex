@@ -1,0 +1,35 @@
+Design et programmation Artéfex - Projet libre et coopératifs pour entreprises.
+
+Notre travail chez Artéfex, c'est pas juste un look, c'est avant tout une solide structure logiciel basée sur les dernières innovations dans le monde de l'informatique.
+
+Tout est construit sur du logiciel libre. Pas de licences coûteuses, de contrats lourds, d'obligations de toute sorte. Le développement est ouvert et vous fournira des des améliorations et nouvelles fonctionalités même après l'échéance du contrat.
+
+Les langage de programmation que nous utilisons sont divers : Python, Java, C/C++, PHP, Javascript. Ils seront spécialement choisis en fonction de vos besoins et de l'envergure du projet.
+
+Particularité de chaque language :
+	- Python : Développement rapide, maintenance aisée, multi-plateforme, adapté à tout type de projet où la performance n'est pas critique ;
+	- C/C++ : Développement complexe et long, mais rapidité d'exécution qui fait ses preuves (la majeure partie des logiciels système sont écrit en C) ;
+	- Java : Reconnu pour sa capacité à être exécuté sur tous les systèmes d'exploitations.
+	- PHP : Conçu pour bâtir des sites webs dynamiques.
+	- Javascript : Javascript permet de dynamiser les pages web du côté client. Associé avec jQuery, il permet de produire des animations éblouissantes et rapides ! Encore mieux qu'avec Adobe Flash et ce, tout en respectant les standards évolutifs du web. Il peut aussi servir, comme Python, de langage de script à l'intérieur même d'une application écrite en C/C++ pour intégrer des fonctionalités additionnelles en peu de temps.
+
+Une base de données est essentielle pour stocker les données des utilisateurs de votre projet. Artéfex possède aussi son expertise en la matière ! MySQL et sqlite sont nos choix par excellence pour baser un application sur le web ou locale.
+
+Nous favorisons les programme multi-plateforme, ainsi notre travail devient disponible peu importe l'endroit où vous en aurez besoin.
+
+Côté mobile maintenant ! Programmation Android à souhait. Nous prenons en charge votre expansion dans le monde du téléphone intelligent avec une application de qualité basée sur les dernières nouveautés de Google et de la communauté Android.
+
+Nous offrons aussi la préparation de serveurs Linux configuré selon vos besoins :
+	- Système d'opération Fedora, CentOS, Ubuntu, Debian, etc...
+	- Serveur web Apache ;
+	- Serveur ftp ;
+	- Connexion ssh avec pré-configuration des clés ;
+	- Configuration ssl pour une connexion sécurisée en https ;
+	- Serveur de mail ;
+	- Dépôt git, svn, mercurial pour le développement logiciel.
+
+Aussi, du support ! Nous pouvons apporter notre aide si vous avez des soucis techniques contraignant. Notre expertise en matière de système Linux et en matériel informatique est une opportunité pour votre entreprise.
+
+
+
+
