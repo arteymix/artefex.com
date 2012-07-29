@@ -3,15 +3,10 @@
     <div class="grid_4">
         <h4>Navigation</h4>
         <ul>
-            <?php
-            $menus = array(
-                'accueil' => 'Accueil',
-                'projets' => 'Projets',
-                'contact' => 'Contact',
-                'about' => 'À propos');
+            <?php            
             foreach ($menus as $key => $menu) :
                 ?>
-                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo $name == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
+                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo Request::current()->controller() == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
             <?php endforeach; ?>
 
         </ul>
@@ -28,7 +23,7 @@
                 'programmation#git' => 'Gestion de version');
             foreach ($menus as $key => $menu) :
                 ?>
-                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo $name == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
+                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo Request::current()->controller() == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
             <?php endforeach; ?>
             
         </ul>
@@ -46,7 +41,7 @@
                 );
             foreach ($menus as $key => $menu) :
                 ?>
-                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo $name == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
+                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo Request::current()->controller() == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
             <?php endforeach; ?>
            
 
@@ -65,7 +60,7 @@
                 );
             foreach ($menus as $key => $menu) :
                 ?>
-                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo $name == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
+                <li><a href="<?php echo URL::base() . ($key == 'accueil' ? '' : $key) ?>" style="<?php echo Request::current()->controller() == $key ? "text-shadow: 0px 0px 4px white;" : "" ?>"><?php echo $menu ?></a></li>
             <?php endforeach; ?>
             
 

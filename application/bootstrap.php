@@ -77,7 +77,8 @@ if (isset($_SERVER['KOHANA_ENV'])) {
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-    'base_url' => '/artefex.com/',
+    'base_url' => '/',
+    'index_file' => ''
 ));
 
 /**
@@ -96,8 +97,8 @@ Kohana::$config->attach(new Config_File);
 Kohana::modules(array(
     // 'auth'       => MODPATH.'auth',       // Basic authentication
     'cache' => MODPATH . 'cache', // Caching with multiple backends
-    // 'codebench' => MODPATH . 'codebench', // Benchmarking tool
-    // 'database'   => MODPATH.'database',   // Database access
+        // 'codebench' => MODPATH . 'codebench', // Benchmarking tool
+        // 'database'   => MODPATH.'database',   // Database access
         // 'image'      => MODPATH.'image',      // Image manipulation
         // 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
         // 'unittest'   => MODPATH.'unittest',   // Unit testing
@@ -108,62 +109,16 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('accueil', '(<controller>(/<action>(/<id>)))')
+Route::set('accueil', '(<controller>)')
         ->defaults(array(
             'controller' => 'accueil',
-            'action' => 'index',
         ));
 
-Route::set('projets', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'projets',
-    'action' => 'index',
-));
-Route::set('contact', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'contact',
-    'action' => 'index',
-));
-Route::set('about', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'about',
-    'action' => 'index',
-));
-Route::set('libre', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'libre',
-    'action' => 'index',
-));
-Route::set('kohana', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'kohana',
-    'action' => 'index',
-));
-Route::set('git', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'git',
-    'action' => 'index',
+Route::set('simple', '<controller>', array(
+    'controller' => 'projets|contact|about|libre|kohana|git|web|logicels|serveurs|partenaires|programmation',
 ));
 
-Route::set('web', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'web',
-    'action' => 'index',
-));
 
-Route::set('logicels', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'logicels',
-    'action' => 'index',
-));
-
-Route::set('serveurs', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'serveurs',
-    'action' => 'index',
-));
-Route::set('partenaires', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'partenaires',
-    'action' => 'index',
-));
-
-Route::set('programmation', '(<controller>(/<action>(/<id>)))', array(
-    'controller' => 'programmation',
-    'action' => 'index',
-));
-
-Route::set('blog', '(<controller>(/<action>(/<id>)))', array(
+Route::set('blog', '<controller>(/<action>(/<id>))', array(
     'controller' => 'blog',
-    'action' => 'index',
 ));
