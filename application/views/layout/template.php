@@ -25,7 +25,7 @@
 </center>
             
 			<div id="copyright">
-				Construit en HTML5 et CSS3 avec Kohana.<br />
+				Construit en HTML5 et CSS3 sur le framework <a href="http://kohanaframework.org">Kohana</a>.<br />
 				Tout droits réservés &copy; Artéfex
 			</div>
 		</div>

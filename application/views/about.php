@@ -1,6 +1,6 @@
 <br class="clear" />
 
-<aside id="logo">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.s</aside>
+<aside id="logo">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</aside>
 
 <section id="description">
     <hgroup id="title">

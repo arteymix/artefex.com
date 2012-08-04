@@ -48,32 +48,32 @@
     <div class="projet-container grid_4" style="background: url(asset/img/saveinteam.png)">
         
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>SaveInTeam</h2>
+            <p>Un système d'enchères inversé.</p>
             
         </div>
         
     </div>
-    <div class="projet-container grid_4">
+    <div class="projet-container grid_4" style="background: url(asset/img/morencyphoto.png)">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Morency Photo</h2>
+            <p>Un site de photographe.</p>
             
         </div>
         
     </div>
-    <div class="projet-container grid_4" >
+    <div class="projet-container grid_4"  style="background: url(asset/img/kohana.png); background-position: -320px -5px">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Kohana</h2>
+            <p>Un framework PHP5 très rapide.</p>
             
         </div>
         
     </div>
     <div class="projet-container grid_4" style="">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Django</h2>
+            <p>le meilleur framework écrit en Python.</p>
             
         </div>
         
@@ -85,26 +85,26 @@
     <h2 style="margin-bottom: 20px">Sous forme de logiciel</h2>
     
     <p>Le logiciel est une façon pratique et puissante de mettre en oeuvre un projet.</p>
-     <div class="projet-container grid_4" >
-        <div class="projet-text">
+     <div class="projet-container grid_4" style="background: url(asset/img/budjhete.png)">
+        <div class="projet-text" >
             <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <p>Un logiciel de comptabilité. Voire le <a href="http://www.budjhete.com">site web</a>.</p>
+            
+        </div>
+        
+    </div>
+    <div class="projet-container grid_4" style="background: url(asset/img/projets/android.png) no-repeat center; background-size: auto 200px;">
+        <div class="projet-text">
+            <h2>Android</h2>
+            <p>Pour les téléphones très intelligents.</p>
             
         </div>
         
     </div>
     <div class="projet-container grid_4">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
-            
-        </div>
-        
-    </div>
-    <div class="projet-container grid_4">
-        <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Funky Domino</h2>
+            <p>Un jeu de physique sous Android. Voir le projet sur <a href="https://github.com/GMXteam/FunkyDomino">GitHub</a></p>
             
         </div>
         
@@ -124,18 +124,18 @@
     <h2 style="margin-bottom: 20px">Configuration de serveur</h2>
     <p>Configurer un serveur informatique qui répond à des besoins spécifiques est une tâche très complexe. Laissez-nous le faire pour vous.</p>
     
-     <div class="projet-container grid_4" >
+     <div class="projet-container grid_4" style="background: url(asset/img/projets/linux.png) no-repeat center; background-size: auto 200px;">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Web</h2>
+            <p>Linux, Apache, MySQL, PHP avec un certificat SSL.</p>
             
         </div>
         
     </div>
-    <div class="projet-container grid_4">
+    <div class="projet-container grid_4" style="background: url(asset/img/projets/git.png) no-repeat center; background-size: 200px auto;">
         <div class="projet-text">
-            <h2>Budj'hète</h2>
-            <p>Un logiciel de comptabilité</p>
+            <h2>Interne</h2>
+            <p>Système de version <a href="http://git-scm.com">git</a> avec configuration pour les ssh, https et git ainsi que <a href="http://redmine.org">Redmine</a>.</p>
             
         </div>
         
