@@ -51,7 +51,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Set the default language
  */
-I18n::lang('fr-ca');
+I18n::lang('fr');
 
 /**
  * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
@@ -78,7 +78,8 @@ if (isset($_SERVER['KOHANA_ENV'])) {
  */
 Kohana::init(array(
     'base_url' => '/',
-    'index_file' => ''
+    'index_file' => '',
+    'cache' => FALSE
 ));
 
 /**
@@ -97,13 +98,20 @@ Kohana::$config->attach(new Config_File);
 Kohana::modules(array(
     // 'auth'       => MODPATH.'auth',       // Basic authentication
     'cache' => MODPATH . 'cache', // Caching with multiple backends
-        // 'codebench' => MODPATH . 'codebench', // Benchmarking tool
-        // 'database'   => MODPATH.'database',   // Database access
-        // 'image'      => MODPATH.'image',      // Image manipulation
-        // 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-        // 'unittest'   => MODPATH.'unittest',   // Unit testing
-        // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+    // 'codebench' => MODPATH . 'codebench', // Benchmarking tool
+    // 'database'   => MODPATH.'database',   // Database access
+    // 'image'      => MODPATH.'image',      // Image manipulation
+    // 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+    // 'unittest'   => MODPATH.'unittest',   // Unit testing
+    // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+    'urlang' => MODPATH . 'urlang',
+    'backend' => MODPATH . 'backend',
 ));
+
+Cookie::$salt = "dfgsert89ewriewhgufhsg78treg";
+
+
+I18n::lang(Cookie::get('lang', 'fr'));
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
