@@ -30,7 +30,7 @@
         <div style="float: right; display: inline">
         <span style="margin-bottom: 20px;float: right;"><input name="nom" type="text" placeholder="Nom" /></span><br />
          <span style="margin-bottom: 20px;float: right;"><input name="courriel" type="email" placeholder="Courriel" /></span><br />
-         <button style="float: right; display: inline" type="submit">Envoyer</button>
+         <button style="float: right; display: inline" class="btn" type="submit">Envoyer</button>
         </div>
         
     </form>

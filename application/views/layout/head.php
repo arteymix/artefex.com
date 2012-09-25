@@ -1,7 +1,11 @@
 <title>Artéfex, programmation et gestion de projets</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" media="screen" href="asset/css/960.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="asset/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="asset/css/style.css" />
-<link href='http://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<?php echo HTML::style("asset/css/960.css") ?>
+<?php echo HTML::style("asset/css/reset.css") ?>
+<?php echo HTML::style("asset/css/bootstrap.min.css") ?>
+<?php echo HTML::style("asset/css/style.css") ?>
+<?php echo HTML::style("asset/css/960.css") ?>
+<?php echo HTML::style("http://fonts.googleapis.com/css?family=Londrina+Shadow") ?>
+<?php echo HTML::script("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js") ?>
+<?php echo HTML::script("asset/js/bootstrap.min.js") ?>
+
