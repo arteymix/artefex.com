@@ -1,3 +1,6 @@
 [submodule "modules/urlang"]
 	path = modules/urlang
 	url = https://github.com/Hete/kohana-urlang.git
+[submodule "modules/paypal"]
+	path = modules/paypal
+	url = https://github.com/Hete/kohana-paypal.git
